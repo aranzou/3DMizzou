@@ -1,0 +1,28 @@
+    <div class="sidebar-nav">
+        <a href="#dashboard-menu" class="nav-header" data-toggle="collapse"><i class="icon-dashboard"></i>Dashboard</a>
+        <ul id="dashboard-menu" class="nav nav-list collapse in">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="/admin/forms.php?f=email">E-mail Users</a></li>
+        </ul>
+        
+        <a href="#users-menu" class="nav-header" data-toggle="collapse"><i class="icon-briefcase"></i>Accounts <span class="label label-info">+ <? echo countUnapproved(); ?></span></a>
+    	<ul id="users-menu" class="nav nav-list collapse in">
+    		<li><a href="users.php?t=o">Officers</a></li>
+			<li><a href="users.php?t=tech">Tech Members</a></li>
+			<li><a href="users.php?t=active">Active Members</a></li>
+			<li><a href="users.php?t=r">Registered Users</a></li>
+			<li><a href="users.php?t=u"><b><? echo countUnapproved(); ?></b> Need Reviewed</a></li>
+       </ul>
+
+        <a href="#rsvp-menu" class="nav-header" data-toggle="collapse"><i class="icon-briefcase"></i>RSVP System</a>
+    	<ul id="rsvp-menu" class="nav nav-list collapse in">
+            <li><a href="events.php?s=active">View/Add Events</a></li>
+            <li><a href="events.php?s=expired">Expired Events</a></li>
+        </ul>
+        
+        <a href="#rank-menu" class="nav-header" data-toggle="collapse"><i class="icon-briefcase"></i>Ranking System</a>
+    	<ul id="rank-menu" class="nav nav-list collapse in">
+            <li><a href="badges.php?p=listbadge">Manage Badge(s)</a></li>
+            <li><a href="badges.php?p=listcategory">Manage Categories</a></li>
+        </ul>
+    </div>

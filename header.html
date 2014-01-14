@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+
+<meta charset="utf-8">
+<meta name="description" content="The 3D Printing Club provides a collaborative environment in which students at the University of Missouri can explore, develop, and experiment with technology in the field of additive fabrication, making the University of Missouri a hub for additive fabrication in the American university community.">
+<meta name="keywords" content="3dprint, 3d print club, 3d printers, mizzou, university of missouri, 3dpc, 3dprintclub, umc, 3d, print, club, 3d print club mizzou, mizzou 3d print club">
+<title>3DPC - University of Missouri</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/boxed.css" id="layout">
+<link rel="stylesheet" type="text/css" href="css/colors/green.css" id="colors">
+
+
+<script src="js/jquery/jquery-1.8.3.js"></script>
+<script src="js/jquery/jquery-ui-1.9.2.custom.js"></script>
+<link rel="stylesheet" href="css/smoothness/jquery-ui-1.9.2.custom.css" />
+
+<script src="js/custom.js"></script>
+<script src="js/selectnav.js"></script>
+<script src="js/flexslider.js"></script>
+<script src="js/twitter.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/fancybox.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/isotope.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36780380-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<style type="text/css">
+	@media only screen and (min-width: 960px) {#portfolio-wrapper img {min-height: 290px;}} 
+	@media only screen and (min-width: 768px) and (max-width: 959px) {#portfolio-wrapper img {min-height: 229px;}}
+</style>
+
+</head>
+<body>
+
+<div id="wrapper">
+
+<div class="container ie-dropdown-fix">
+
+	<div id="header">
+
+		<div class="eight columns">
+			<div id="logo">
+				<a href="/"><img src="images/site_logo.png" alt="logo" /></a>
+				<div id="tagline">Life's better in 3D.</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="eight columns">
+			
+			<?php
+				include('includes/socialmedia.html');
+				$dir="";
+				setupSocial($dir);
+			?>
+			
+			<div class="clear"></div>
+			
+			<div id="contact-details">
+				<ul>
+					<li><i class="mini-ico-envelope"></i><a href="mailto:support@3dmizzou.org">support@3dmizzou.org</a></li>
+					<li><i class="mini-ico-user"></i>+1 573 200 6494</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
+	<?php
+		include('includes/mainmenu.php');
+	?>
+</div>
